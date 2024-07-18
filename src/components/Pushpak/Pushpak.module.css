@@ -1,0 +1,132 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+} */
+
+.container {
+  background-color: #1c1c1c;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.header img.logo {
+  width: 190px; /* Adjust size as necessary */
+  height: 50px;
+  margin-right: 20px;
+  background-color: white;
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+}
+
+.header .title {
+  flex-grow: 1;
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: white;
+}
+
+.update-time,
+.weather {
+  margin-left: 15px;
+}
+
+.weather span {
+  display: block;
+}
+
+.table {
+  width: 90%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  border-bottom: 1px solid #ddd;
+  padding: 25px;
+  font-size: 32px;
+}
+
+.table td {
+  border-bottom: 1px solid #ddd;
+  padding: 25px;
+  font-size: 32px;
+}
+
+.table th {
+  background-color: #fecd1a;
+  color: black;
+  border-right: none; /* Remove vertical lines */
+  text-align: center;
+}
+
+.table td {
+  border-right: none; /* Remove vertical lines */
+  text-align: left;
+}
+
+.table tr:last-child td {
+  border-bottom: none; /* Remove bottom border from the last row */
+}
+
+.footer {
+  width: 90%;
+  margin-top: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.footer .highlight {
+  font-weight: bold;
+}
+
+.footer .highlight span {
+  color: #fecd1a;
+  font-weight: bold;
+}
+
+.footer .qr-codes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer .qr-codes div {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.footer .qr-codes img {
+  width: 100px;
+  height: auto;
+}
+.nextsch {
+  text-align: center;
+}
