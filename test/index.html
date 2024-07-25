@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Websocket wss://cabslots-backend.onrender.com:443 test</h1>
+    <script>
+      var conn = new WebSocket("wss://cabslots-backend.onrender.com");
+      conn.onopen = function (e) {
+        console.log("Connection established!");
+
+        conn.send("Hello server!");
+
+        conn.onmessage = function (e) {
+          console.log(e.data);
+        };
+        conn.onclose = function (e) {
+          console.log("Code is :" + e.code);
+          console.log(e.reason);
+        };
+        conn.onerror = function (e) {
+          console.log("Error occured!!:(");
+          console.log(e);
+        };
+      };
+    </script>
+  </body>
+</html>

@@ -18,7 +18,8 @@ function Cabs({ cabsimgs }) {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:7000");
+    // 443 is the default port for websockets onrender.com
+    const ws = new WebSocket("wss://cabslots-backend.onrender.com");
 
     ws.onopen = () => {
       setConnection(ws);
@@ -96,7 +97,9 @@ function Cabs({ cabsimgs }) {
                   <th>Cab Type</th>
                   <th className={dark["avl-cabs-th"]}>Available Cabs</th>
                   <th>Booking Type</th>
-                  <th>Fare</th>
+                  <th>
+                    Fare <em>(Starts from)</em>
+                  </th>
                 </tr>
               </thead>
 

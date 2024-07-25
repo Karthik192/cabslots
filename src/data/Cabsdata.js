@@ -8,18 +8,20 @@ import Prepaid from "../images/Prepaid.jpg";
 import Skycab from "../images/Sky Cab.jpg";
 import Srinivasa from "../images/Srinivasa.jpg";
 import Uber from "../images/Uber.jpg";
+import Rideeasy from "../images/Rideeasy.png";
 
 export const CabsImgs = {
-  Ola,
+  OLA: Ola,
   Uber,
-  Ohm,
-  Meeru,
-  Skycab,
-  Prepaid,
-  Srinivasa,
-  Onecar,
+  "OHM E-Cab": Ohm,
+  "Meru Cabs": Meeru,
+  "Sky Cabs": Skycab,
+  "Prepaid Taxi": Prepaid,
+  "Srinivasa Cabs": Srinivasa,
+  "One Car": Onecar,
   Noori,
-  Chois,
+  CHOIS: Chois,
+  "Ride Easy": Rideeasy,
 };
 
 export const Cabsdata1 = [
